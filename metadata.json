@@ -1,0 +1,6 @@
+{
+  "name": "FarmBridge India",
+  "description": "Digital direct agricultural marketplace connecting Indian farmers with households and bulk buyers with 5-level trust verification, harvest batch traceability, mandi price comparisons, and zero platform fees.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

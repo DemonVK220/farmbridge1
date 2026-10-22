@@ -1,0 +1,1 @@
+      {invoiceOpen && <OrderInvoiceModal order={order} onClose={() => setInvoiceOpen(false)} />}

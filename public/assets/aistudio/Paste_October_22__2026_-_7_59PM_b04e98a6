@@ -1,0 +1,1208 @@
+# MASTER WEBSITE BUILD PROMPT: FARMBRIDGE INDIA
+
+## 1. Project Overview
+
+Build a complete, responsive, modern web application called **FarmBridge India**.
+
+**Tagline:** “From Farmers to Families, More Directly.”
+
+**Mission:** Create a trustworthy digital marketplace that connects Indian farmers directly with households, restaurants, hostels, retailers, small grocery stores, food processors, and other bulk buyers. Help farmers reach more buyers, give customers better price transparency, improve traceability, and reduce avoidable food waste caused by unsold harvests.
+
+The platform should support Indian agricultural products, including vegetables, fruits, grains, pulses, millets, spices, oilseeds, flowers, and other eligible farm produce.
+
+The website must be designed for real-world usability, including farmers with limited digital literacy, rural users with slower internet connections, and customers who speak regional Indian languages.
+
+This is a social-impact project for a student innovation challenge. Build a polished, functional prototype first, with a clear path to a production-ready platform.
+
+**Important:** Do not claim that all intermediaries are harmful, that every farmer sells directly, or that existing agricultural marketplaces do not exist. Our differentiation is a combination of accessible farmer verification, harvest-batch traceability, local mandi price comparison, hyperlocal group orders, surplus discounts, assisted onboarding, and transparent costs.
+
+## 2. Branding and Visual Design
+
+Create a distinctive agricultural technology brand.
+
+- Brand name: FarmBridge India.
+- Primary colors: deep forest green and leaf green.
+- Background: warm cream or off-white.
+- Accent colors: restrained yellow, orange, and earthy brown.
+- Typography: modern, highly readable, and accessible.
+- Visual style: clean, trustworthy, warm, professional, and community-focused.
+- Use high-quality agricultural photography, realistic produce images, farm imagery, and clean icons.
+- Use rounded cards, subtle shadows, clear spacing, simple navigation, and consistent buttons.
+- Avoid excessive gradients, clutter, cartoonish graphics, and generic corporate templates.
+- Use responsive layouts for mobile, tablet, laptop, and desktop.
+- Add appropriate loading states, empty states, success messages, validation errors, confirmation dialogs, and error recovery.
+- Support keyboard navigation, visible focus indicators, accessible contrast, and screen readers.
+
+Create a professional logo featuring a leaf, field, or bridge-inspired symbol.
+
+## 3. User Roles and Permissions
+
+Implement role-based interfaces for the following users.
+
+### A. Public visitor
+- Browse available produce and farmer profiles.
+- Search products by name, category, location, and price.
+- View farmer trust badges and harvest information.
+- Access the impact dashboard, help centre, and helplines.
+- Register or sign in to place orders.
+
+### B. Farmer
+- Register and complete farmer verification.
+- Create and manage a farm profile.
+- List products, prices, available quantities, and harvest batches.
+- Upload live-captured farm and batch photos.
+- Receive and manage orders.
+- Track sales, payouts, customer ratings, and demand.
+- View surplus stock and recommended discounts.
+- Access a simple dashboard designed for low digital literacy.
+
+### C. Household customer
+- Browse and buy produce.
+- Compare prices with local mandi prices.
+- Create group orders with neighbours.
+- Subscribe to weekly produce baskets.
+- Track orders and deliveries.
+- Review completed orders and report problems.
+- Scan product QR codes to see batch details.
+
+### D. Business or institutional buyer
+- Search produce in bulk quantities.
+- Request quotations from multiple farmers.
+- Place recurring procurement orders.
+- Specify quality, grade, packaging, quantity, and delivery requirements.
+- Compare offers and manage invoices and order history.
+
+### E. Farmer Producer Organisation (FPO) or farmer group
+- Register a group of farmers.
+- Assist farmers with onboarding and verification.
+- Aggregate produce from participating farmers.
+- Manage collective listings and group supply.
+- Help coordinate bulk orders and local deliveries.
+
+### F. Delivery partner
+- View assigned deliveries.
+- Update pickup, transit, and delivery status.
+- Confirm delivery using an order code or QR scan.
+- Record delivery problems and proof of delivery.
+
+### G. Administrator and verification officer
+- Review farmer verification submissions.
+- Verify documents and certifications.
+- Review reported listings and suspicious quantities.
+- Manage disputes, strikes, badges, users, and product categories.
+- Manage helpline information and official-source links.
+- View platform analytics and audit logs.
+
+Enforce permissions throughout the application. Users must not be able to access another user's private records by changing a URL or identifier.
+
+## 4. Main Navigation and Pages
+
+Create the following pages with working navigation:
+
+1. Home
+2. Browse Produce
+3. Farmer Directory
+4. Farmer Profile
+5. Product Details
+6. How It Works
+7. Farmer Registration
+8. Farmer Dashboard
+9. Customer Dashboard
+10. Business Buyer Dashboard
+11. FPO Dashboard
+12. Cart
+13. Checkout
+14. Order Confirmation
+15. Order Tracking
+16. Group Orders
+17. Weekly Basket Subscription
+18. Surplus Harvest Deals
+19. Verification Centre
+20. Trust and Traceability
+21. Impact Dashboard
+22. Help Centre and Helplines
+23. About Us
+24. Contact Us
+25. FAQ
+26. Pricing and Premium Plans
+27. Login and Registration
+28. User Profile and Settings
+29. Notifications
+30. Admin Dashboard
+31. Privacy Policy
+32. Terms and Conditions
+33. Refund, Cancellation, and Dispute Policy
+34. Accessibility and Language Settings
+
+Include a persistent logo and a clear **Home** button. Every page must have a working route back to the home page. The browser back button must behave correctly.
+
+Use breadcrumbs on deeper pages and appropriate navigation menus on mobile.
+
+## 5. Home Page
+
+Design a compelling landing page with the following sections.
+
+### Hero section
+Headline: “Fresh From Farms. Fairer for Everyone.”
+
+Supporting text: “Discover local farmers, see where your food comes from, compare prices transparently, and buy fresh produce with confidence.”
+
+Primary buttons:
+- Shop Fresh Produce
+- Sell on FarmBridge
+- Explore Nearby Farmers
+
+Include a high-quality farm-to-table hero image.
+
+### Search section
+Provide a prominent search bar with:
+- Product name.
+- Category.
+- Village, district, city, or PIN code.
+- Distance or delivery area.
+- Quantity required.
+- Maximum price.
+- Harvest date.
+- Farmer trust level.
+- Organic or other verified certification filters.
+
+Include voice search where supported.
+
+### Featured sections
+- Fresh harvest today.
+- Farmers near you.
+- Recently harvested produce.
+- Verified farmer profiles.
+- Surplus deals.
+- Group orders open near you.
+- Weekly produce baskets.
+- Seasonal produce.
+- Bulk procurement offers.
+
+### Trust explanation
+Explain what each verification badge means and what evidence supports it.
+
+### Social-impact section
+Display clearly labelled metrics such as farmers onboarded, orders fulfilled, produce sold, surplus redirected, and participating villages.
+
+Do not invent real-world impact statistics. Until real data exists, label sample figures as demonstration data or show a clear “Pilot metrics” placeholder.
+
+### Footer
+Include contact information, helplines, official resources, policies, social links, language selection, and separate links for farmers and customers.
+
+## 6. Farmer Verification: Five-Level Trust Ladder
+
+Build a dedicated verification system with clearly explained badges. Each level must identify what was checked, who checked it, and when the verification occurred.
+
+Verification must be evidence-based. Never display a verified badge merely because a user filled in a form.
+
+### Level 1: Phone Verified
+
+Requirements:
+- Verify the farmer's phone number using an OTP.
+- Store the verification timestamp and status.
+- Prevent repeated OTP abuse using rate limits.
+- Provide resend and recovery options.
+
+Badge: **Phone Verified**
+
+This level confirms access to a phone number only. It does not establish farm ownership or product quality.
+
+### Level 2: Farm Evidence Submitted and Reviewed
+
+Collect appropriate evidence such as:
+- A land record or other accepted evidence of farming activity.
+- A PM-KISAN registration number where applicable and voluntarily supplied.
+- A live-captured photo of the farm with GPS coordinates and a timestamp.
+
+**Live capture requirements:**
+- Use the device camera directly.
+- Do not offer a gallery-upload option for the specific live-capture evidence step.
+- Request location permission only when necessary and explain why.
+- Record capture time and available location accuracy.
+- Show an understandable error if camera or location permissions are unavailable.
+- Provide a fair alternative verification route through an assisted centre or authorised verifier.
+- Do not treat GPS metadata alone as proof of land ownership.
+- Never expose precise farm coordinates publicly. Display only an appropriately generalised village or region to customers.
+
+Documents must be handled securely. Collect only necessary information, restrict staff access, and redact sensitive document fields from public displays.
+
+**Important:** PM-KISAN participation must not be mandatory for every farmer. Farmers who are ineligible, unregistered, or unable to provide the number should have alternative verification routes.
+
+Badge: **Farm Evidence Reviewed**
+
+### Level 3: Local Institutional Confirmation
+
+Accept confirmation from an authorised:
+- Local agricultural officer.
+- Farmer Producer Organisation (FPO) representative.
+- Panchayat representative or other authorised local verifier.
+
+Record:
+- Verifier identity and role.
+- Organisation.
+- Verification date.
+- Evidence checked.
+- Approval or rejection.
+- Notes and audit history.
+
+Do not imply government endorsement unless an authorised body has actually provided it.
+
+Badge: **Locally Verified**
+
+### Level 4: Certificate Verified
+
+Allow farmers to submit certificates and their identifying numbers, including applicable examples such as:
+- FSSAI licence or registration, where legally applicable to the activity.
+- Jaivik Bharat-related organic certification or recognition, where applicable.
+- Participatory Guarantee System (PGS) certification.
+- National Programme for Organic Production (NPOP) certification.
+
+Requirements:
+- Collect the certificate type, number, issuing authority, issue date, and expiry date where applicable.
+- Allow supporting documents to be submitted privately.
+- Enable an administrator to verify the certificate against an authoritative registry or issuing body where possible.
+- Display only verified certificate details that are appropriate for public disclosure.
+- Mark pending or unverified documents as “Submitted, awaiting review.”
+- Expire, suspend, or recheck badges when certificates lapse or are withdrawn.
+
+Do not claim a farmer or product is organic merely because the farmer says so or uploads an unverified document. Not every certificate applies to every farmer or product.
+
+Badge: **Certificate Verified**, with the specific certificate type shown separately.
+
+### Level 5: Pesticide-Residue Laboratory Report
+
+Allow farmers to submit a laboratory report for a particular crop or harvest batch.
+
+Record:
+- Laboratory name.
+- Report number.
+- Sample collection date.
+- Sample identification.
+- Crop and batch identification.
+- Test parameters and results.
+- Applicable reference limits.
+- Report issue date.
+- Reviewer status.
+
+Where practical, validate the laboratory and report with the issuing laboratory or an authorised verification process.
+
+Display the scope and date of the report. A passing test must not be presented as proof that every harvest from the farm is pesticide-free or that future batches will have identical results.
+
+Badge: **Residue Report Verified**, linked to the relevant batch and report.
+
+### Badge presentation rules
+
+Show trust badges on farmer profiles, listings, checkout pages, and batch traceability pages.
+
+Use distinct labels for:
+- Phone verified.
+- Farm evidence reviewed.
+- Locally verified.
+- Certificate verified.
+- Residue report verified.
+
+Show pending, expired, suspended, and rejected statuses separately.
+
+Do not combine all evidence into a vague “100% safe” or “100% trusted” claim. Customers must be able to understand exactly what has and has not been checked.
+
+## 7. Yield Sanity Check and Anti-Reseller Protection
+
+Implement a suspicious-volume detection system to identify listings that may not reasonably match a farmer's reported growing capacity.
+
+Collect, when appropriate:
+- Farm acreage or cultivated area.
+- Crop type and growing season.
+- Estimated yield range.
+- Available harvest quantity.
+- Previous listings and sales.
+- Batch quantities and dates.
+- Crop cycle and location.
+
+Estimate plausible production ranges using crop-specific assumptions and configurable local agricultural reference data.
+
+Flag a listing for review when its quantity substantially exceeds a plausible range based on the farm's reported acreage and crop.
+
+For example, a small farm listing an unusually large quantity of a crop should trigger a review, not an automatic accusation.
+
+The system must:
+- Support multiple plots and crops.
+- Account for shared or leased land and collective farming.
+- Allow farmers to explain legitimate large harvests or aggregated supply.
+- Distinguish a farmer selling their own crop from an FPO or cooperative selling aggregated produce.
+- Never automatically label a farmer a reseller based only on one numerical threshold.
+- Use configurable rules and show the reason for a flag.
+- Send flagged listings to an administrator for review.
+- Allow a farmer to appeal an incorrect flag.
+- Record decisions in an audit log.
+
+Do not present the system as infallible. The purpose is to identify suspicious listings for review while minimising false accusations against legitimate farmers.
+
+## 8. Harvest Batch Photos and Traceability
+
+Every product listing must be connected to a specific harvest batch when applicable.
+
+Require a fresh batch photo for each new harvest batch, including:
+- Date and time.
+- Product and variety.
+- Batch ID.
+- Farmer ID.
+- Harvest date.
+- Available quantity.
+- Unit of measurement.
+- Approximate farm location.
+- Verification status.
+- Relevant certificate or laboratory report references.
+
+For batch-photo evidence:
+- Provide a live-capture camera flow without gallery uploads where live capture is required.
+- Record capture metadata where available.
+- Do not claim that a photograph proves the produce's identity or quality by itself.
+- Allow authorised reviewers to reject suspicious or misleading photos.
+- Store the original privately and display an appropriately sized public version.
+- Protect location and identity information.
+
+Generate a unique QR code for each orderable batch or package.
+
+When scanned, the QR code should open a public batch-details page displaying:
+- Farmer or farm group profile.
+- Village or generalised location.
+- Trust badges and their meanings.
+- Product name and variety.
+- Batch number.
+- Harvest date.
+- Batch photo.
+- Applicable certificate details.
+- Applicable laboratory report.
+- Packing date, where recorded.
+- Order or delivery traceability information where safe to expose.
+
+Never expose personal phone numbers, government ID numbers, private documents, or precise farm coordinates on the public QR page.
+
+The QR code must open a real application route, not a decorative, nonfunctional graphic.
+
+## 9. Farmer Strike and Badge-Removal System
+
+Create a transparent enforcement process for fraudulent claims, forged certificates, repeated misleading listings, or deliberately false batch details.
+
+Implement:
+1. Customer or reviewer report.
+2. Evidence collection.
+3. Administrative review.
+4. Notice to the farmer.
+5. Opportunity to respond or appeal.
+6. Warning or strike where justified.
+7. Temporary suspension of a listing or relevant badge.
+8. Removal of a badge or account restriction after due review.
+9. Appeal and reinstatement workflow where appropriate.
+
+Do not penalise a farmer automatically for an unproven allegation, an honest mistake, a failed GPS capture, or a reasonable yield discrepancy.
+
+Distinguish between:
+- A genuine food-safety concern.
+- A misleading product claim.
+- A certificate that expired.
+- A listing error.
+- A delivery dispute.
+- A malicious or unsubstantiated complaint.
+
+Show customers the current status of a badge without publicly exposing private case details.
+
+## 10. Assisted Farmer Signup Through Common Service Centres
+
+Create an assisted onboarding flow for farmers who do not own smartphones or are uncomfortable using digital applications.
+
+Allow authorised Common Service Centre (CSC) operators or approved local onboarding partners to help with:
+- Account registration.
+- Phone verification.
+- Farm profile creation.
+- Document submission.
+- Verification appointments.
+- Product listings.
+- Order notifications and basic training.
+
+Requirements:
+- Clearly identify the assisted-onboarding operator.
+- Require the farmer's informed consent.
+- Let the farmer review and approve submitted information.
+- Do not let operators impersonate farmers or secretly control their accounts.
+- Use role-based access and audit logs.
+- Never store passwords in plain text or ask an operator to retain them.
+- Provide printable or SMS-based order summaries where practical.
+- Support assisted verification for farmers without a camera-enabled phone.
+
+Do not claim an official partnership with CSCs unless such a partnership has actually been established. For the prototype, label this feature “Proposed assisted onboarding network.”
+
+## 11. Product Listings and Search
+
+Each listing should include:
+- Product name.
+- Category and variety.
+- Farmer or farmer group.
+- Product images.
+- Batch ID and harvest date.
+- Available quantity and units.
+- Price per unit.
+- Minimum order quantity where applicable.
+- Approximate location.
+- Estimated delivery or pickup options.
+- Trust badges.
+- Relevant certificates.
+- Storage recommendations where appropriate.
+- Expected availability.
+- Surplus or freshness discount if applicable.
+
+Support:
+- Search by product, farmer, village, district, city, and PIN code.
+- Category filters.
+- Price sorting.
+- Distance sorting where location access is authorised.
+- Harvest-date filtering.
+- Quantity and bulk-order filtering.
+- Verification filters.
+- Certification filters.
+- Availability and delivery filters.
+- Saved products and favourites.
+
+Show a clear “No results found” state and useful alternatives.
+
+## 12. Local Mandi Price Comparison
+
+Display a local mandi price comparison wherever reliable reference data is available.
+
+Show:
+- Product and variety.
+- Market or mandi name.
+- Market location.
+- Price range or modal price, as applicable.
+- Unit of measurement.
+- Market date.
+- Source of the data.
+- Date and time of the last update.
+- FarmBridge price.
+- Any differences in grade, packaging, or delivery conditions.
+
+Use authorised and reliable market data sources, such as official agricultural market datasets where available.
+
+**Do not invent live mandi prices or imply that demonstration prices are official.**
+
+If a live data integration is unavailable, clearly label sample values as demonstration data and provide a configurable data-source interface for future integration.
+
+Explain that mandi prices and direct-to-customer prices may differ because of quality, grade, quantity, packaging, location, transport, and timing.
+
+## 13. Freshness Countdown and Automatic Surplus Discounts
+
+Build a surplus management feature that helps farmers sell available produce before it becomes unsellable.
+
+Allow farmers to specify:
+- Harvest date.
+- Expected shelf-life range, where appropriate.
+- Storage conditions.
+- Quantity remaining.
+- Preferred selling deadline.
+- Minimum acceptable price.
+
+Create configurable discount rules based on:
+- Time since harvest.
+- Product-specific freshness characteristics.
+- Remaining inventory.
+- Farmer-selected minimum price.
+- Demand and approaching availability deadlines.
+
+Display:
+- Harvest date.
+- A clear freshness or recommended-selling countdown where reliable information supports it.
+- Current discount.
+- Original price and discounted price.
+- Remaining quantity.
+- Collection or delivery deadline.
+
+Do not claim that a countdown guarantees food safety. Shelf life depends on the product, handling, storage, and environmental conditions.
+
+Never reduce prices below the farmer's configured minimum without consent.
+
+Offer surplus bundles, bulk discounts, local group buying, and donation or redistribution options where feasible.
+
+## 14. Customer Marketplace Features
+
+### A. Farmer profile on every listing
+
+Every listing must clearly show:
+- Farmer or group name.
+- Village and generalised location.
+- Trust level and individual verification badges.
+- Harvest date.
+- Batch ID.
+- Available certificates and their verification status.
+- Applicable residue-report information.
+- Farmer rating based on completed orders.
+- Delivery or pickup options.
+
+Customers must be able to open the farmer's full profile.
+
+### B. Cart and checkout
+
+Support:
+- Multiple products.
+- Multiple farmers.
+- Quantity adjustment.
+- Unit and price calculations.
+- Item availability validation.
+- Delivery or pickup selection.
+- Delivery-slot selection where supported.
+- Order notes.
+- Coupon or discount application.
+- Order summary and confirmation.
+
+Clearly distinguish separate farmers, shipments, and delivery charges when an order contains products from multiple sources.
+
+### C. Full cost upfront
+
+Display the full payable amount before the customer confirms the order:
+
+- Produce subtotal.
+- Applicable discounts.
+- Third-party delivery charge.
+- Applicable taxes or legally required charges.
+- Any other unavoidable charge.
+- Final total.
+
+**FarmBridge platform fee: ₹0 for customers and farmers on the standard marketplace plan.**
+
+Third-party delivery fees and other legally applicable charges must be disclosed before payment. Do not hide costs until after checkout.
+
+If delivery pricing is unavailable, label it as an estimate or request a delivery quote rather than displaying a fabricated fee.
+
+### D. Group orders with neighbours
+
+Allow customers in the same locality or delivery area to create a group order.
+
+Features:
+- Create a group and share an invite link.
+- Join an existing group.
+- View the group deadline.
+- Select products and quantities.
+- Show the group's combined quantity.
+- Display volume-based savings where supported.
+- Split eligible delivery costs transparently.
+- Show individual participant totals.
+- Set minimum order thresholds.
+- Cancel or close the group under clearly displayed rules.
+
+Never expose a participant's phone number or home address to other group members without consent.
+
+### E. Weekly subscription basket
+
+Allow customers to subscribe to recurring baskets of seasonal produce.
+
+Include:
+- Basket size and preferences.
+- Household size.
+- Dietary or product preferences.
+- Delivery frequency.
+- Preferred delivery day.
+- Substitution preferences.
+- Pause, skip, cancel, or resume controls.
+- Upcoming basket preview.
+- Price estimate and final confirmation.
+- Delivery notifications.
+
+Do not charge customers for future baskets without clear authorisation and transparent subscription terms.
+
+### F. Ratings and problem reports
+
+Allow ratings only for completed orders.
+
+Collect:
+- Product quality.
+- Freshness as experienced by the customer.
+- Packaging.
+- Order accuracy.
+- Delivery experience.
+- Optional written feedback.
+- Problem category and supporting evidence.
+
+Provide reports for missing produce, incorrect quantity, damaged goods, misleading claims, delivery failures, and potential food-safety concerns.
+
+Use verified order history to calculate public ratings. Prevent duplicate reviews and obvious abuse.
+
+Customer reports can trigger investigation but must not automatically reduce a farmer's trust level without appropriate review.
+
+### G. Order tracking
+
+Provide a timeline with relevant stages:
+- Order placed.
+- Farmer confirmed.
+- Produce being prepared.
+- Ready for pickup.
+- Picked up by delivery partner, where applicable.
+- In transit.
+- Delivered.
+- Completed or issue reported.
+
+Display estimated delivery times only when supported by actual scheduling or logistics information.
+
+Include delivery confirmation through an order code or QR scan.
+
+## 15. Authentication and Account Security
+
+Create:
+- Email and password registration.
+- Phone number and OTP verification.
+- Google sign-in integration.
+- Optional Facebook sign-in integration.
+- Password reset.
+- Email verification where applicable.
+- Session management.
+- Logout from the current device.
+- Account deletion request.
+- Privacy and consent settings.
+- Role selection and onboarding.
+- Optional additional authentication for administrators.
+
+Use proper OAuth configuration and provider credentials. Never hardcode real API secrets in frontend code or pretend that a sign-in button works when it is not connected.
+
+For the prototype, provide clearly labelled demo sign-in or simulated authentication if real provider configuration is unavailable.
+
+Protect against unauthorised role changes, insecure direct object references, brute-force attacks, and unauthorised access to private documents.
+
+## 16. Payments and Farmer Payouts
+
+Build the interface for:
+- UPI.
+- Cards.
+- Supported online payment methods.
+- Payment status.
+- Refund status.
+- Order receipts.
+- Farmer payout history.
+- Platform transaction records.
+- Failed-payment recovery.
+
+Use an authorised payment gateway for real transactions. Do not collect or store raw card details.
+
+The prototype may simulate payments, but every simulated transaction must be labelled clearly as a demonstration. Never display a fake success message as proof of a real payment.
+
+Real payouts, refunds, settlement timing, disputes, taxes, and applicable marketplace obligations must be handled through a suitable production architecture and compliant service providers.
+
+## 17. Premium Subscription Plans
+
+Create a dedicated pricing page with a clear comparison between free and paid plans.
+
+### Free Farmer Plan
+- Farmer profile.
+- Basic listings.
+- Standard marketplace access.
+- Basic order management.
+- Standard trust-verification application.
+- Customer reviews.
+- Basic sales history.
+
+### Farmer Plus
+Illustrative prototype price: ₹199 per month.
+
+Potential features:
+- Enhanced sales analytics.
+- Demand trends.
+- Inventory insights.
+- Surplus-sale tools.
+- Additional listing insights.
+- Downloadable reports.
+- Optional promotional tools.
+
+### Business Buyer Plus
+Illustrative prototype price: ₹499 per month.
+
+Potential features:
+- Bulk procurement dashboard.
+- Recurring purchase management.
+- Saved suppliers.
+- Purchase-history reports.
+- Multi-supplier quotation tools.
+- Team access where supported.
+
+Prices are examples, not validated market prices. Make them configurable.
+
+Core farmer listing and access to the marketplace must remain free. Do not sell a higher trust badge, let paid users bypass verification, or make customers pay to see essential safety and traceability information.
+
+Include:
+- Monthly and annual billing options where implemented.
+- Transparent features and pricing.
+- Trial terms where applicable.
+- Cancellation and renewal information.
+- Payment history.
+- Upgrade and downgrade flows.
+- Clear confirmation before payment.
+
+## 18. Multilingual Support and Voice Search
+
+Provide a prominent language switcher.
+
+Initial interface languages:
+- English.
+- Tamil.
+- Hindi.
+
+Design the translation system so additional Indian languages can be added later.
+
+Requirements:
+- Translate navigation, forms, buttons, error messages, notifications, help content, and core onboarding.
+- Preserve user selections when switching languages.
+- Avoid hardcoded text scattered across components.
+- Use readable fonts for each language.
+- Allow users to change language from the footer and account settings.
+
+Voice search should:
+- Use browser speech recognition where supported or a properly configured speech service.
+- Support selected languages where technically available.
+- Ask for microphone permission only when needed.
+- Display recognised words before executing the search.
+- Allow manual editing and typed-search fallback.
+- Explain when voice recognition is unavailable.
+
+Do not claim universal voice support if the selected browser or device does not support it.
+
+## 19. Helpline Directory and Official Resources
+
+Create a dedicated **Help and Helplines** page, accessible from the header, footer, farmer dashboard, customer dashboard, and checkout support section.
+
+Each entry should include:
+- Service name.
+- Intended use.
+- Phone number.
+- Operating hours if officially documented.
+- Official website.
+- “Call Now” button using a telephone link.
+- Last-verified date.
+- Source link.
+- Short instructions about when to use the service.
+
+### Kisan Call Centre
+- Number: **1800-180-1551**
+- Toll-free.
+- Operating hours: 6 AM to 10 PM, all seven days.
+- Purpose: agricultural advice and farmer queries.
+- Official source: https://www.dackkms.gov.in/account/aboutus.aspx
+
+### PM-KISAN support
+Potential contact numbers to verify before publication:
+- 155261.
+- 011-24300606.
+- 1800-115-526, also commonly written as 1800115526.
+
+Do not display these numbers as confirmed current contacts until an administrator checks them against the official PM-KISAN portal or another authoritative government source.
+
+Official portal: https://pmkisan.gov.in/
+
+If verification cannot be completed, show the official portal link and label the phone numbers “Awaiting official verification.” Never silently treat a number supplied by a user or copied from a third-party website as confirmed.
+
+### Crop insurance: PMFBY
+- Helpline: **14447**
+- Purpose: crop-insurance queries, grievances, and reporting crop loss.
+- Official source: https://pmfby.gov.in/
+
+Use the number currently published by the official PMFBY portal. Do not display a second number as an alternative unless it is independently confirmed by an authoritative source.
+
+### National Consumer Helpline
+- Number: **1915**
+- Alternative toll-free number: **1800-11-4000**
+- Purpose: consumer grievances.
+- Official sources:
+  - https://consumerhelpline.gov.in/
+  - https://consumeraffairs.gov.in/pages/nch
+
+### FSSAI helpdesk
+- Number: **1800-11-2100**
+- Purpose: queries related to FSSAI licensing, registration, and food-safety administration.
+- Display its published operating hours only when verified.
+- Official source: https://foscos.fssai.gov.in/
+
+Do not imply that this helpdesk replaces emergency medical assistance or guarantees immediate resolution of food-safety complaints.
+
+### Cyber financial fraud helpline
+- Number: **1930**
+- Purpose: immediate reporting of financial cyber fraud.
+- Official portal: https://www.cybercrime.gov.in/
+- Official source: https://cybercrime.gov.in/Accept.aspx/Webform/images/Webform/Webform/Webform/Webform/Webform/FAQ.aspx
+
+Explain that users should report financial cyber fraud promptly and also use the official portal as appropriate.
+
+### Helpline verification policy
+
+Build an admin-editable helpline database.
+
+Every helpline must have:
+- A source URL.
+- Last-verified date.
+- Verification status.
+- Reviewer.
+- Optional review reminder.
+- A visible “Information may change; check the official source” note.
+
+Do not claim that the website automatically verifies government numbers unless an actual verification integration exists.
+
+Never fabricate government contacts, opening hours, endorsements, or emergency-response promises.
+
+## 20. Notifications and Communication
+
+Create notification support for:
+- OTP verification.
+- Farmer verification updates.
+- Listing approval or rejection.
+- New orders.
+- Order acceptance.
+- Pickup and delivery updates.
+- Payment and refund status.
+- Group-order progress.
+- Weekly basket reminders.
+- Surplus deals.
+- Subscription renewal and cancellation.
+- Customer reports and dispute updates.
+
+Support in-app notifications first. Prepare email, SMS, and WhatsApp integration points for future use.
+
+Use approved providers and user consent for external messages. Label simulated notifications clearly in demo mode.
+
+## 21. Dashboards and Analytics
+
+### Farmer dashboard
+Display:
+- Total sales.
+- Orders received.
+- Completed orders.
+- Current inventory.
+- Products nearing their configured selling deadline.
+- Surplus inventory.
+- Customer ratings.
+- Verification status.
+- Certificate expiry reminders.
+- Pending payouts.
+- Sales trends.
+- Product demand.
+- Listing flags and appeal status.
+
+Use simple charts and clear summaries.
+
+### Customer dashboard
+Display:
+- Active orders.
+- Past orders.
+- Saved farmers.
+- Saved products.
+- Group orders.
+- Weekly basket subscription.
+- Refunds and reports.
+- Delivery addresses.
+- Language and notification settings.
+
+### Business buyer dashboard
+Display:
+- Procurement requests.
+- Supplier comparisons.
+- Quotations.
+- Recurring orders.
+- Purchase history.
+- Delivery schedule.
+- Invoices and payment status.
+
+### Admin dashboard
+Display:
+- Registered users by role.
+- Farmer verification queue.
+- Badge and certificate reviews.
+- Suspicious-volume flags.
+- Reported listings.
+- Disputes and appeals.
+- Orders and payment status.
+- Helpline verification reminders.
+- Platform usage and impact metrics.
+
+Do not expose personal data in general analytics. Use access controls and aggregate data wherever possible.
+
+## 22. Data Model and Backend Architecture
+
+Use a maintainable architecture with clear separation between frontend, backend, database, file storage, and external services.
+
+A suitable prototype stack may use:
+- React with TypeScript.
+- A modern responsive styling system.
+- Supabase or another suitable managed backend.
+- PostgreSQL or a comparable relational database.
+- Secure object storage for private verification evidence.
+- A supported authentication provider.
+- Configurable interfaces for payment, mapping, notifications, and delivery services.
+
+If the project already has a different working stack, preserve it unless there is a strong technical reason to migrate.
+
+Create appropriate entities or tables for:
+- Users.
+- Roles and permissions.
+- Farmer profiles.
+- Farm plots.
+- Verification applications.
+- Verification evidence.
+- Verification badges and history.
+- Certificates.
+- Laboratory reports.
+- Harvest batches.
+- Products and listings.
+- Inventory changes.
+- Mandi price references.
+- Yield-check flags.
+- Farmer strikes and appeals.
+- Carts.
+- Orders and order items.
+- Payments and refunds.
+- Farmer payouts.
+- Delivery assignments.
+- Group orders and participants.
+- Basket subscriptions.
+- Ratings and reviews.
+- Customer reports.
+- Notifications.
+- Premium plans and subscriptions.
+- Helplines and official sources.
+- Admin audit logs.
+
+Use unique IDs, timestamps, relationships, validation, and suitable indexes.
+
+Important backend rules:
+- Apply database-level access controls, not only frontend checks.
+- Users may access only the records their role permits.
+- Private verification documents must never be publicly accessible.
+- Validate all prices, quantities, order totals, and status changes on the server.
+- Do not trust totals or permissions sent by the browser.
+- Keep API keys and secrets in server-side environment variables.
+- Use signed, short-lived links for authorised access to private documents where appropriate.
+- Record administrative changes in an audit log.
+- Use rate limiting and input validation.
+- Implement secure account deletion and data-retention procedures.
+- Never store passwords in plain text.
+- Do not expose OTPs, authentication tokens, or private customer information in logs.
+
+If the current project cannot support a real backend, create a clearly labelled prototype using sample data and local persistence. Keep the code structured so a real backend can be connected later.
+
+## 23. Privacy, Consent, and Safety
+
+Build privacy into the design.
+
+- Request location access only when needed.
+- Explain why location is requested.
+- Allow users to enter a village or PIN code manually.
+- Do not expose precise farm or customer coordinates publicly.
+- Collect only necessary identity and farm information.
+- Restrict access to land records and government identifiers.
+- Use secure document storage.
+- Provide clear consent and privacy notices.
+- Support appropriate account deletion and data-access requests.
+- Do not reveal one customer's address to other group-order participants.
+- Do not publicly expose private reports, dispute details, or verifier notes.
+- Protect users against common web security issues.
+- Follow applicable Indian privacy, consumer, food-safety, e-commerce, and payment requirements with appropriate professional review before launch.
+
+## 24. About, Impact, and Social Value
+
+Create a compelling About Us page that explains:
+- The challenge of finding reliable local produce.
+- The difficulty farmers may face reaching suitable buyers.
+- Why harvest traceability matters.
+- How transparent pricing can help both sides.
+- How surplus discounts and group orders can improve market access.
+- How assisted onboarding can include farmers with limited digital access.
+
+Create an impact dashboard with metrics such as:
+- Farmers onboarded.
+- Active verified profiles.
+- Completed orders.
+- Quantity of produce sold.
+- Surplus produce sold before its intended selling deadline.
+- Participating villages.
+- Customer satisfaction.
+- Average delivery cost where data is reliable.
+
+Do not claim that all surplus sales represent food waste prevented, or that farmers' income necessarily increased, without suitable evidence.
+
+For the prototype, use labelled demonstration metrics. For production, calculate metrics from verified platform events and explain how each metric is defined.
+
+## 25. Important Standard Website Features
+
+Implement all normal features expected in a modern website:
+- Working logo and home navigation.
+- Search and filters.
+- Login, logout, and account recovery.
+- Form validation.
+- Password visibility toggle.
+- Loading indicators.
+- Empty states.
+- Error and success notifications.
+- Confirmation dialogs.
+- Responsive menus.
+- Pagination or incremental loading for long lists.
+- Product favourites.
+- Search history where appropriate.
+- Profile settings.
+- Notification settings.
+- Contact form.
+- FAQ and support.
+- Terms and privacy pages.
+- Cookie or consent controls where applicable.
+- Accessible forms and labels.
+- Useful 404 page.
+- Network-error recovery.
+- Clear demo-data labels.
+- No dead buttons.
+- No placeholder links that appear functional but do nothing.
+- No horizontal overflow on mobile.
+- No fake statistics presented as real data.
+
+Every visible interactive element must have a working action or be clearly marked as not yet available.
+
+## 26. Demo Data and Example Scenarios
+
+Seed the prototype with realistic but clearly labelled sample data from different Indian regions.
+
+Examples may include:
+- Tomatoes.
+- Onions.
+- Bananas.
+- Mangoes.
+- Spinach.
+- Rice.
+- Millets.
+- Lentils.
+- Groundnuts.
+- Seasonal fruits.
+
+Use fictional sample farmers and fictional farm locations unless actual participants have given permission to appear.
+
+Create example listings showing:
+- A phone-verified farmer.
+- A locally verified farmer.
+- A farmer with a verified certificate.
+- A batch with a verified laboratory report.
+- A listing awaiting verification.
+- A surplus listing with a discount.
+- A suspicious quantity awaiting review.
+- A group order with multiple participants.
+- A completed order with a QR traceability page.
+
+Never attach fake government documents or fake laboratory reports and present them as genuine. Clearly label sample certificates and reports as demonstration records.
+
+## 27. Implementation Plan
+
+Build the application in phases. Prioritise working functionality over the number of screens.
+
+### Phase 1: Functional marketplace prototype
+Implement:
+- Responsive home page.
+- Product browsing and search.
+- Farmer profiles.
+- Product listings.
+- Role-based demo accounts.
+- Five-level verification status interface.
+- Harvest batch records and QR traceability.
+- Cart and checkout with clearly labelled simulated payment.
+- Order history and tracking.
+- Group orders.
+- Surplus discounts.
+- Local mandi comparison with clearly labelled sample data.
+- Language switcher.
+- Help and helplines.
+- Basic admin dashboard.
+- Working navigation and local persistence or backend storage.
+
+### Phase 2: Verification and operational features
+Implement:
+- Secure document submission.
+- Camera-based live-capture flow.
+- GPS permission and capture metadata.
+- Yield sanity checks.
+- Certificate and lab-report review workflows.
+- Strikes, suspensions, and appeals.
+- Farmer sales analytics.
+- Assisted onboarding.
+- Customer reports and disputes.
+- Notifications and subscription baskets.
+
+### Phase 3: Production integrations
+Implement only when real provider credentials and suitable permissions are available:
+- Google and Facebook authentication.
+- Secure database and private file storage.
+- Payment gateway and payout processing.
+- Official mandi data integration.
+- Maps and location services.
+- SMS or WhatsApp messaging.
+- Delivery-provider integration.
+- Authoritative certificate or report verification where supported.
+
+### Phase 4: Testing and launch readiness
+Test:
+- All role permissions.
+- Farmer registration and verification.
+- Invalid documents and expired certificates.
+- Camera and location permission failures.
+- Suspicious quantity flags.
+- Listing updates and stock availability.
+- Multiple farmers in one cart.
+- Group-order totals.
+- Discount calculations.
+- Checkout and payment failures.
+- Refunds and order cancellation.
+- QR code routing.
+- Helpline links and telephone buttons.
+- Mobile responsiveness.
+- Language switching.
+- Keyboard navigation.
+- Network failures.
+- Privacy and access controls.
+
+Fix all critical errors before claiming that the platform is production-ready.
+
+## 28. Acceptance Criteria
+
+The finished prototype must satisfy these conditions:
+
+1. The website looks polished and works on mobile and desktop.
+2. The home page, navigation, search, product listings, and farmer profiles function.
+3. Every listing shows its farmer, trust status, and harvest-batch information.
+4. Verification levels have clear meanings and do not overstate what was verified.
+5. Live-capture verification does not offer gallery uploads in the designated evidence flow.
+6. Yield anomalies trigger review rather than automatic accusations.
+7. Batch photos and QR codes lead to traceability information.
+8. Fraud allegations support review and appeal.
+9. Farmers without smartphones have a defined assisted-onboarding path.
+10. Mandi prices show their source and update date or are explicitly labelled as sample data.
+11. Surplus discounts respect configured minimum prices.
+12. Group orders calculate individual totals and shared costs transparently.
+13. Customers see the full cost before confirming an order.
+14. The standard marketplace platform fee is shown as ₹0.
+15. Ratings are connected to completed orders.
+16. Helplines display their verification status and official source.
+17. PM-KISAN phone numbers remain unpublished as confirmed contacts until verified.
+18. Simulated payments and authentication are clearly labelled.
+19. No critical navigation element or button is broken.
+20. The application does not expose private farm documents, exact locations, customer addresses, or sensitive identifiers.
+21. The demo does not fabricate official endorsements, live market data, real farmer testimonials, or real impact statistics.
+22. The code is organised, maintainable, and ready for iterative development.
+
+## 29. Final Instructions to the AI Website Builder
+
+First inspect the existing project and preserve any useful code already present. Do not destroy working features unnecessarily.
+
+Then:
+1. Establish the core page structure and design system.
+2. Implement the functional marketplace flow.
+3. Connect all navigation and interactive elements.
+4. Create realistic, clearly labelled demonstration data.
+5. Build the trust and traceability system as a first-class feature.
+6. Add the customer features, assisted signup, and helpline directory.
+7. Add premium-plan interfaces without making core marketplace access paid.
+8. Test the important user journeys.
+9. Fix runtime errors, broken routes, missing states, and layout problems.
+10. Explain which features work, which are simulated, which require credentials, and which require a real backend.
+
+Do not merely generate a beautiful static landing page. Build a coherent, usable application with working user journeys.
+
+If the entire scope is too large to implement reliably in one pass, complete Phase 1 properly before moving to later phases. Do not delete core functionality to make room for decorative features.
+
+The goal is a credible, demonstrable social-impact marketplace that improves transparency, helps farmers reach buyers, and gives customers better information about the produce they purchase.

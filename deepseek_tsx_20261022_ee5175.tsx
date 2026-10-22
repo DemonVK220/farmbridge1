@@ -1,0 +1,1 @@
+  const relatedProducts = products.filter((p) => p.farmerId === product.farmerId && p.id !== product.id && p.status === 'active');
